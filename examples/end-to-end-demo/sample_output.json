@@ -1,0 +1,208 @@
+{
+  "summary": {
+    "total_goals": 11,
+    "total_users": 4,
+    "total_issues": 2,
+    "high_count": 1,
+    "medium_count": 1,
+    "low_count": 0,
+    "health_score": 85,
+    "health_level": "良好",
+    "by_dimension": {
+      "责任不清": 1,
+      "未向上对齐": 1
+    }
+  },
+  "issues": [
+    {
+      "issue_id": "ISSUE-0001",
+      "dimension": "责任不清",
+      "severity": "medium",
+      "title": "子目标覆盖不全",
+      "description": "上级目标涉及多个方面，子目标可能覆盖不全",
+      "evidence": "上级目标有 4 个 KR，但仅有 1 个子目标，覆盖比例较低",
+      "goal_id": "G-0001",
+      "goal_title": "扩大 HR AI 方案在内外部的影响力并形成规模化落地",
+      "owner_id": null,
+      "suggestion": "建议检查是否所有重要方面都有对应的子目标和负责人"
+    },
+    {
+      "issue_id": "ISSUE-0002",
+      "dimension": "未向上对齐",
+      "severity": "high",
+      "title": "目标未向上对齐",
+      "description": "该目标未对齐到任何上级目标",
+      "evidence": "该目标有上级，但未对齐到上级的任何目标，可能存在方向不一致的风险",
+      "goal_id": "G-0008",
+      "goal_title": "扩大重点项目价值，进一步提升people应用深度",
+      "owner_id": null,
+      "suggestion": "请确认该目标是否对齐到上级目标，或补充对齐关系"
+    }
+  ],
+  "suggestions": [
+    {
+      "suggestion_id": "SUG-001",
+      "priority": "P0",
+      "title": "优先解决 1 个高严重度问题",
+      "description": "当前有 1 个高严重度问题，建议优先处理，包括：目标未向上对齐",
+      "owner": "团队负责人",
+      "related_issues": [
+        "ISSUE-0002"
+      ],
+      "deadline": "本周内"
+    },
+    {
+      "suggestion_id": "SUG-002",
+      "priority": "P1",
+      "title": "逐步解决 1 个中严重度问题",
+      "description": "当前有 1 个中严重度问题，建议在 2 周内处理",
+      "owner": "各目标负责人",
+      "related_issues": [
+        "ISSUE-0001"
+      ],
+      "deadline": "2周内"
+    },
+    {
+      "suggestion_id": "SUG-003",
+      "priority": "P1",
+      "title": "建立目标对齐 review 机制",
+      "description": "建议每月进行一次目标对齐 review，及时发现和解决目标拆解问题",
+      "owner": "团队负责人",
+      "related_issues": [],
+      "deadline": "长期"
+    }
+  ],
+  "goal_tree": {
+    "L1": [
+      {
+        "goal_id": "G-0001",
+        "title": "扩大 HR AI 方案在内外部的影响力并形成规模化落地",
+        "owner": "示例负责人A",
+        "progress": 0.3,
+        "children": [
+          "G-0005"
+        ]
+      },
+      {
+        "goal_id": "G-0002",
+        "title": "推动 AI 面试从试点验证走向商业化 Ready",
+        "owner": "示例负责人A",
+        "progress": 0.25,
+        "children": []
+      },
+      {
+        "goal_id": "G-0003",
+        "title": "让 CSM 助手稳定进入试用，优先验证风险与高价值服务场景",
+        "owner": "示例负责人A",
+        "progress": 0.2,
+        "children": [
+          "G-0006"
+        ]
+      },
+      {
+        "goal_id": "G-0004",
+        "title": "推进 HR AI 前沿探索，形成可复制的产品与业务路径",
+        "owner": "示例负责人A",
+        "progress": 0.15,
+        "children": []
+      }
+    ],
+    "L2": [
+      {
+        "goal_id": "G-0005",
+        "title": "服务产品化进一步突破，推进豆包AI场景落地",
+        "owner": "示例经理B",
+        "progress": 0.3,
+        "children": [
+          "G-0007",
+          "G-0009",
+          "G-0011"
+        ]
+      },
+      {
+        "goal_id": "G-0006",
+        "title": "升级飞鹰服务运营体系，提升飞鹰交付效率",
+        "owner": "示例经理B",
+        "progress": 0.25,
+        "children": [
+          "G-0010"
+        ]
+      }
+    ],
+    "L3": [
+      {
+        "goal_id": "G-0007",
+        "title": "HR AI 解决方案的推广和落地有阶段性进展和客户实践反馈",
+        "owner": "示例员工C",
+        "progress": 0.35,
+        "children": []
+      },
+      {
+        "goal_id": "G-0008",
+        "title": "扩大重点项目价值，进一步提升people应用深度",
+        "owner": "示例员工C",
+        "progress": 0.3,
+        "children": []
+      },
+      {
+        "goal_id": "G-0009",
+        "title": "CSM✖️HRAI实践，HRAI场景赋能X个客户搭建自己的HR数字应用及平台",
+        "owner": "示例员工D",
+        "progress": 0.25,
+        "children": []
+      },
+      {
+        "goal_id": "G-0010",
+        "title": "CSM✖️商业化，基于HR数字人、People、AI包等商业化SKU",
+        "owner": "示例员工D",
+        "progress": 0.2,
+        "children": []
+      },
+      {
+        "goal_id": "G-0011",
+        "title": "CSM✖️HRAI数字人，完成SSC数据人上线MVP版本验证",
+        "owner": "示例员工D",
+        "progress": 0.15,
+        "children": []
+      }
+    ]
+  },
+  "user_summary": [
+    {
+      "user_id": "ou_001",
+      "name": "示例负责人A",
+      "level": "L1",
+      "department": "客户成功中心",
+      "goal_count": 4,
+      "issue_count": 0,
+      "high_issue_count": 0
+    },
+    {
+      "user_id": "ou_002",
+      "name": "示例经理B",
+      "level": "L2",
+      "department": "客户成功中心",
+      "goal_count": 2,
+      "issue_count": 0,
+      "high_issue_count": 0
+    },
+    {
+      "user_id": "ou_003",
+      "name": "示例员工C",
+      "level": "L3",
+      "department": "客户成功中心",
+      "goal_count": 2,
+      "issue_count": 0,
+      "high_issue_count": 0
+    },
+    {
+      "user_id": "ou_004",
+      "name": "示例员工D",
+      "level": "L3",
+      "department": "客户成功中心",
+      "goal_count": 3,
+      "issue_count": 0,
+      "high_issue_count": 0
+    }
+  ]
+}

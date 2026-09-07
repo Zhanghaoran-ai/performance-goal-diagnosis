@@ -1,0 +1,23 @@
+*.pyc
+__pycache__/
+.pytest_cache/
+.cache/
+.DS_Store
+._*
+
+# Runtime secrets and local outputs
+.env
+.env.*
+*.secret.json
+*.credentials.json
+*credential*.json
+*token*.json
+performance-api.json
+diagnosis*.html
+diagnosis*.md
+diagnosis*.json
+indicator-relation-decisions.json
+
+# Local dependency caches
+node_modules/
+integrations/feishu-app-creator/vendor/

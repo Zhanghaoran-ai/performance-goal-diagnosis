@@ -1,0 +1,279 @@
+{
+  "meta": {
+    "collect_time": "2026-08-09 15:30:00",
+    "permission_level": 1,
+    "total_users": 4,
+    "users_with_okr": 4,
+    "total_goals": 11,
+    "warnings": [],
+    "source": "示例数据 - 客户成功中心 团队 Q3 OKR"
+  },
+  "goals": [
+    {
+      "goal_id": "G-0001",
+      "title": "扩大 HR AI 方案在内外部的影响力并形成规模化落地",
+      "description": "推动 HR AI 方案从试点走向规模化，建立行业影响力",
+      "level": "L1",
+      "owner_id": "ou_001",
+      "owner_name": "示例负责人A",
+      "department": "客户成功中心",
+      "parent_goal_ids": [],
+      "aligned_to_goal_ids": [],
+      "indicators": [
+        {"name": "累计阅读量", "value": 10000, "unit": "次"},
+        {"name": "上线客户数", "value": 50, "unit": "家"}
+      ],
+      "progress": 0.3,
+      "status": "进行中",
+      "weight": 0.25,
+      "key_results": [
+        {"id": "KR1", "title": "推动 HR AI 方案核心文档累计阅读量超 1 万", "progress": 0.4},
+        {"id": "KR2", "title": "协助团队完成数字员工方案 Q3 版本迭代", "progress": 0.3},
+        {"id": "KR3", "title": "推动 50 家客户完成 HR AI 方案上线", "progress": 0.2},
+        {"id": "KR4", "title": "建立 HR AI 方案上线、反馈、案例沉淀机制", "progress": 0.5}
+      ]
+    },
+    {
+      "goal_id": "G-0002",
+      "title": "推动 AI 面试从试点验证走向商业化 Ready",
+      "description": "为 Q4 全量商业化做好准备",
+      "level": "L1",
+      "owner_id": "ou_001",
+      "owner_name": "示例负责人A",
+      "department": "客户成功中心",
+      "parent_goal_ids": [],
+      "aligned_to_goal_ids": [],
+      "indicators": [],
+      "progress": 0.25,
+      "status": "进行中",
+      "weight": 0.25,
+      "key_results": [
+        {"id": "KR1", "title": "推动懂车帝 AI 面试完成上线", "progress": 0.3},
+        {"id": "KR2", "title": "支持内部多个 AI 面试试点客户", "progress": 0.2},
+        {"id": "KR3", "title": "形成可复用的 AI 面试交付手册", "progress": 0.1}
+      ]
+    },
+    {
+      "goal_id": "G-0003",
+      "title": "让 CSM 助手稳定进入试用，优先验证风险与高价值服务场景",
+      "description": "CSM 助手产品化第一步",
+      "level": "L1",
+      "owner_id": "ou_001",
+      "owner_name": "示例负责人A",
+      "department": "客户成功中心",
+      "parent_goal_ids": [],
+      "aligned_to_goal_ids": [],
+      "indicators": [],
+      "progress": 0.2,
+      "status": "进行中",
+      "weight": 0.25,
+      "key_results": [
+        {"id": "KR1", "title": "完成底层数据更新、字段质量、权限验证", "progress": 0.4},
+        {"id": "KR2", "title": "面向 CSM 同学开启正式试用", "progress": 0.1},
+        {"id": "KR3", "title": "风险板块先行完成 MVP 并投入试用", "progress": 0.3}
+      ]
+    },
+    {
+      "goal_id": "G-0004",
+      "title": "推进 HR AI 前沿探索，形成可复制的产品与业务路径",
+      "description": "探索下一代 HR AI 场景",
+      "level": "L1",
+      "owner_id": "ou_001",
+      "owner_name": "示例负责人A",
+      "department": "客户成功中心",
+      "parent_goal_ids": [],
+      "aligned_to_goal_ids": [],
+      "indicators": [],
+      "progress": 0.15,
+      "status": "进行中",
+      "weight": 0.25,
+      "key_results": [
+        {"id": "KR1", "title": "围绕人力域重点 HR AI 场景持续探索", "progress": 0.2},
+        {"id": "KR2", "title": "沉淀可复用的方案框架、交付路径", "progress": 0.1},
+        {"id": "KR3", "title": "转化为可对外分享的观点和方法论", "progress": 0.1}
+      ]
+    },
+    {
+      "goal_id": "G-0005",
+      "title": "服务产品化进一步突破，推进豆包AI场景落地",
+      "description": "HR AI 解决方案落地",
+      "level": "L2",
+      "owner_id": "ou_002",
+      "owner_name": "示例经理B",
+      "department": "客户成功中心",
+      "parent_goal_ids": ["G-0001"],
+      "aligned_to_goal_ids": ["G-0001"],
+      "indicators": [],
+      "progress": 0.3,
+      "status": "进行中",
+      "weight": 0.5,
+      "key_results": [
+        {"id": "KR1", "title": "绩效AIBP 完成产品PRD设计和开发", "progress": 0.4},
+        {"id": "KR2", "title": "门店行业AI实践探索", "progress": 0.2}
+      ]
+    },
+    {
+      "goal_id": "G-0006",
+      "title": "升级飞鹰服务运营体系，提升飞鹰交付效率",
+      "description": "飞鹰产品化升级",
+      "level": "L2",
+      "owner_id": "ou_002",
+      "owner_name": "示例经理B",
+      "department": "客户成功中心",
+      "parent_goal_ids": ["G-0003"],
+      "aligned_to_goal_ids": ["G-0003"],
+      "indicators": [],
+      "progress": 0.25,
+      "status": "进行中",
+      "weight": 0.5,
+      "key_results": [
+        {"id": "KR1", "title": "搭建飞鹰对客服务的AI化能力", "progress": 0.3},
+        {"id": "KR2", "title": "搭建飞鹰内部运维管理系统", "progress": 0.2},
+        {"id": "KR3", "title": "加速Q3商机转化", "progress": 0.3}
+      ]
+    },
+    {
+      "goal_id": "G-0007",
+      "title": "HR AI 解决方案的推广和落地有阶段性进展和客户实践反馈",
+      "description": "HR AI 方案推广",
+      "level": "L3",
+      "owner_id": "ou_003",
+      "owner_name": "示例员工C",
+      "department": "客户成功中心",
+      "parent_goal_ids": ["G-0005"],
+      "aligned_to_goal_ids": ["G-0005"],
+      "indicators": [],
+      "progress": 0.35,
+      "status": "进行中",
+      "weight": 0.5,
+      "key_results": [
+        {"id": "KR1", "title": "HR AI 解决方案推广至全部 A 类和 B 类客户", "progress": 0.4},
+        {"id": "KR2", "title": "了解先进企业的 HR AI 实践并脱敏成标准案例", "progress": 0.3}
+      ]
+    },
+    {
+      "goal_id": "G-0008",
+      "title": "扩大重点项目价值，进一步提升people应用深度",
+      "description": "重点项目价值挖掘",
+      "level": "L3",
+      "owner_id": "ou_003",
+      "owner_name": "示例员工C",
+      "department": "客户成功中心",
+      "parent_goal_ids": [],
+      "aligned_to_goal_ids": [],
+      "indicators": [],
+      "progress": 0.3,
+      "status": "进行中",
+      "weight": 0.5,
+      "key_results": [
+        {"id": "KR1", "title": "推进增购：门店扩张、招聘切换", "progress": 0.3},
+        {"id": "KR2", "title": "绩效 AiBP 方案筹备和客户试点找到1-2家", "progress": 0.4},
+        {"id": "KR3", "title": "低码应用到多维表应用模式替换", "progress": 0.2}
+      ]
+    },
+    {
+      "goal_id": "G-0009",
+      "title": "CSM✖️HRAI实践，HRAI场景赋能X个客户搭建自己的HR数字应用及平台",
+      "description": "HRAI 场景落地",
+      "level": "L3",
+      "owner_id": "ou_004",
+      "owner_name": "示例员工D",
+      "department": "客户成功中心",
+      "parent_goal_ids": ["G-0005"],
+      "aligned_to_goal_ids": ["G-0005"],
+      "indicators": [],
+      "progress": 0.25,
+      "status": "进行中",
+      "weight": 0.333,
+      "key_results": [
+        {"id": "KR1", "title": "在X个标杆客户上落地HRAI驾驶舱实践", "progress": 0.3},
+        {"id": "KR2", "title": "在X个标杆客户上落地HRAI玩法", "progress": 0.2},
+        {"id": "KR3", "title": "产出飞书People HRAI场景合集", "progress": 0.2}
+      ]
+    },
+    {
+      "goal_id": "G-0010",
+      "title": "CSM✖️商业化，基于HR数字人、People、AI包等商业化SKU",
+      "description": "商业化落地",
+      "level": "L3",
+      "owner_id": "ou_004",
+      "owner_name": "示例员工D",
+      "department": "客户成功中心",
+      "parent_goal_ids": ["G-0006"],
+      "aligned_to_goal_ids": ["G-0006"],
+      "indicators": [
+        {"name": "收入", "value": 15, "unit": "万"}
+      ],
+      "progress": 0.2,
+      "status": "进行中",
+      "weight": 0.333,
+      "key_results": [
+        {"id": "KR1", "title": "数字人目标再推动完成2-4家新成单", "progress": 0.3},
+        {"id": "KR2", "title": "飞鹰完成鹏飞关单，同步加速九州转化", "progress": 0.1},
+        {"id": "KR3", "title": "People付费培训Q3完成8+场次交付，收入超15W", "progress": 0.2},
+        {"id": "KR4", "title": "配合销售推进CA、DMSH、MJ等商机转化", "progress": 0.1}
+      ]
+    },
+    {
+      "goal_id": "G-0011",
+      "title": "CSM✖️HRAI数字人，完成SSC数据人上线MVP版本验证",
+      "description": "SSC 数字人 MVP",
+      "level": "L3",
+      "owner_id": "ou_004",
+      "owner_name": "示例员工D",
+      "department": "客户成功中心",
+      "parent_goal_ids": ["G-0005"],
+      "aligned_to_goal_ids": ["G-0005"],
+      "indicators": [],
+      "progress": 0.15,
+      "status": "进行中",
+      "weight": 0.333,
+      "key_results": [
+        {"id": "KR1", "title": "配合发布智能助手MVP版本，并完成售卖", "progress": 0.2},
+        {"id": "KR2", "title": "配合完成客户A招聘AIBP上线", "progress": 0.1}
+      ]
+    }
+  ],
+  "users": [
+    {
+      "user_id": "ou_001",
+      "name": "示例负责人A",
+      "position": "团队负责人",
+      "department": "客户成功中心",
+      "manager_id": "",
+      "level": "L1",
+      "email": "lead.a@example.com",
+      "avatar": ""
+    },
+    {
+      "user_id": "ou_002",
+      "name": "示例经理B",
+      "position": "小组负责人",
+      "department": "客户成功中心",
+      "manager_id": "ou_001",
+      "level": "L2",
+      "email": "manager.b@example.com",
+      "avatar": ""
+    },
+    {
+      "user_id": "ou_003",
+      "name": "示例员工C",
+      "position": "客户成功经理",
+      "department": "客户成功中心",
+      "manager_id": "ou_002",
+      "level": "L3",
+      "email": "employee.c@example.com",
+      "avatar": ""
+    },
+    {
+      "user_id": "ou_004",
+      "name": "示例员工D",
+      "position": "客户成功经理",
+      "department": "客户成功中心",
+      "manager_id": "ou_002",
+      "level": "L3",
+      "email": "employee.d@example.com",
+      "avatar": ""
+    }
+  ]
+}

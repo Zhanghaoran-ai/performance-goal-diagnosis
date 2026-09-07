@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绩效目标拆解诊断报告</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .header p {
+            opacity: 0.9;
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #1f2937;
+        }
+        .health-score {
+            text-align: center;
+            padding: 40px 0;
+        }
+        .score-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: conic-gradient(#3b82f6 85%, #e5e7eb 85%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            position: relative;
+        }
+        .score-inner {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .score-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #3b82f6;
+        }
+        .score-label {
+            font-size: 1rem;
+            color: #6b7280;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: #f9fafb;
+            border-radius: 12px;
+        }
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1f2937;
+        }
+        .stat-label {
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-top: 4px;
+        }
+        .high { color: #ef4444; }
+        .medium { color: #f59e0b; }
+        .low { color: #3b82f6; }
+        .issue-list {
+            list-style: none;
+        }
+        .issue-item {
+            padding: 16px;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            border-left: 4px solid;
+        }
+        .issue-item.high {
+            background: #fef2f2;
+            border-left-color: #ef4444;
+        }
+        .issue-item.medium {
+            background: #fffbeb;
+            border-left-color: #f59e0b;
+        }
+        .issue-item.low {
+            background: #eff6ff;
+            border-left-color: #3b82f6;
+        }
+        .issue-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1f2937;
+        }
+        .issue-meta {
+            font-size: 0.85rem;
+            color: #6b7280;
+            margin-bottom: 8px;
+        }
+        .issue-desc {
+            font-size: 0.9rem;
+            color: #4b5563;
+        }
+        .suggestion-item {
+            padding: 16px;
+            background: #f0fdf4;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            border-left: 4px solid #10b981;
+        }
+        .footer {
+            text-align: center;
+            color: white;
+            opacity: 0.7;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 绩效目标拆解诊断报告</h1>
+            <p>诊断时间：2026-08-10 14:36:57</p>
+        </div>
+
+        <div class="card">
+            <h2>健康度概览</h2>
+            <div class="health-score">
+                <div class="score-circle">
+                    <div class="score-inner">
+                        <div class="score-number">85</div>
+                        <div class="score-label">良好</div>
+                    </div>
+                </div>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">11</div>
+                    <div class="stat-label">目标总数</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">问题总数</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number high">1</div>
+                    <div class="stat-label">高严重度</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number medium">1</div>
+                    <div class="stat-label">中严重度</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number low">0</div>
+                    <div class="stat-label">低严重度</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">参与人数</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>问题清单</h2>
+            <ul class="issue-list">
+
+                <li class="issue-item medium">
+                    <div class="issue-title">[责任不清] 子目标覆盖不全</div>
+                    <div class="issue-meta">目标：扩大 HR AI 方案在内外部的影响力并形成规模化落地</div>
+                    <div class="issue-desc">上级目标涉及多个方面，子目标可能覆盖不全</div>
+                </li>
+
+                <li class="issue-item high">
+                    <div class="issue-title">[未向上对齐] 目标未向上对齐</div>
+                    <div class="issue-meta">目标：扩大重点项目价值，进一步提升people应用深度</div>
+                    <div class="issue-desc">该目标未对齐到任何上级目标</div>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>优化建议</h2>
+
+            <div class="suggestion-item">
+                <div class="issue-title">P0: 优先解决 1 个高严重度问题</div>
+                <div class="issue-meta">责任人：团队负责人</div>
+                <div class="issue-desc">当前有 1 个高严重度问题，建议优先处理，包括：目标未向上对齐</div>
+            </div>
+
+            <div class="suggestion-item">
+                <div class="issue-title">P1: 逐步解决 1 个中严重度问题</div>
+                <div class="issue-meta">责任人：各目标负责人</div>
+                <div class="issue-desc">当前有 1 个中严重度问题，建议在 2 周内处理</div>
+            </div>
+
+            <div class="suggestion-item">
+                <div class="issue-title">P1: 建立目标对齐 review 机制</div>
+                <div class="issue-meta">责任人：团队负责人</div>
+                <div class="issue-desc">建议每月进行一次目标对齐 review，及时发现和解决目标拆解问题</div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>绩效目标拆解诊断系统 v1.4 | 生成时间：2026-08-10 14:36:57</p>
+        </div>
+    </div>
+</body>
+</html>
